@@ -1,0 +1,33 @@
+<script src="//code.jquery.com/jquery-latest.js"></script>
+<script src="../src/jquery.activeurl.js"></script>
+
+<style>
+	.needDrugs{
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 30px;
+		float: left;
+		background-color: #abcdef;
+	}
+	.active{
+		background-color: #fedcba;
+	}
+</style>
+
+<div class="needDrugs" data-url="^/a">
+</div>
+<div class="needDrugs" data-url="^/exam">
+</div>
+<div class="needDrugs" data-url="^/exampp">
+</div>
+<div class="needDrugs" data-url="^/example[\/.?]">
+</div>
+<div class="needDrugs" data-url="^/example/test.h$">
+</div>
+<div class="needDrugs" data-url="^/example/test.html$">
+</div>
+
+<script>
+	$(".needDrugs").activeurl();
+</script>
