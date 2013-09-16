@@ -27,3 +27,5 @@ callback: callback function calling after activeurl
 
 
 ##License##
+
+This application is licensed under the MIT License. See the [LICENSE file](https://github.com/flrngel/jquery-activeurl/blob/master/LICENSE)
