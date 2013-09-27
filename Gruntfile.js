@@ -10,7 +10,8 @@ module.exports = function(grunt) {
 				src: 'src/<%= pkg.name %>.js',
 				dest: 'build/<%= pkg.name %>.min.js'
 			}
-		}
+		},
+		clean: ["build/*"]
 	});
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
