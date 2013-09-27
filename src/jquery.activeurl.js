@@ -1,15 +1,10 @@
 (function($){
 	$.fn.activeurl=function(options){
-		// options
-		// - attr:
-		// - class:
-		// - callback
 		var settings = $.extend({
 			class: "active",
-			attr: "data-url"
+			attr: "data-url",
+			callback: null
 		},options);
-
-		var i=0;
 
 		this.each(function(){
 			var pattern=new RegExp($(this).attr(settings.attr));
