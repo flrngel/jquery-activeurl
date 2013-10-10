@@ -21,7 +21,7 @@ $(".needDrugs").activeurl();
 
 attr: attribute name for RegExp match with URL
 
-class: class name to add when attr matches
+className: class name to add when attr matches
 
 callback: callback function calling after activeurl
 
